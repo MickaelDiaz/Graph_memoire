@@ -35,7 +35,7 @@ frequencies = fftfreq(N, 1/fs)            # Fréquences associées
 plt.figure(figsize=(12, 6))
 plt.plot(frequencies[:N//2], np.abs(fft_values[:N//2]) / N, label="Spectre fréquentiel")
 plt.xlabel("Fréquence (Hz)")
-plt.ylabel("Amplitude")
+plt.ylabel("Tension (V)")
 plt.xlim(0, 1000)
 plt.grid(True)
 plt.legend()
